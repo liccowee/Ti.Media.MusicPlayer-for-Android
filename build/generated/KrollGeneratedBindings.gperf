@@ -1,0 +1,16 @@
+%define lookup-function-name lookupGeneratedInit
+%define class-name MusicplayerBindings
+%{
+
+#include <string.h>
+#include <v8.h>
+#include <KrollBindings.h>
+
+#include "com.activate.musicplayer.MusicPlayer.h"
+
+
+%}
+struct titanium::bindings::BindEntry;
+%%
+com.activate.musicplayer.MusicPlayer, ::com::activate::musicplayer::MusicPlayer::bindProxy, ::com::activate::musicplayer::MusicPlayer::dispose
+%%
